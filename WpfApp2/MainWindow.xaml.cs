@@ -17,15 +17,14 @@ namespace WpfApplication1
 {
     public partial class MainWindow : Window
     {
-        Point start;
-        Point end;
 
         private enum MyShape
         {
-            Line, Point, Rectangle
+            Line, Point, Rectangle, Drag
         }
 
         private MyShape currentShape = MyShape.Line;
+        private UIElement element;
 
         public MainWindow()
         {
@@ -33,7 +32,7 @@ namespace WpfApplication1
         }
 
 
-        private void DrawLine(MouseButtonEventArgs e)
+        private void DrawLine()
         {
             Line newLine = new Line()
             {
@@ -43,11 +42,11 @@ namespace WpfApplication1
                 X2 = end.X,
                 Y2 = end.Y - 60
             };
-            end = e.GetPosition(this);
+
             paintSurface.Children.Add(newLine);
         }
 
-        private void DrawPoint(MouseButtonEventArgs e)
+        private void DrawPoint()
         {
             Ellipse newPoint = new Ellipse()
             {
@@ -78,11 +77,10 @@ namespace WpfApplication1
                 newPoint.Height = start.Y - end.Y;
             }
 
-            end = e.GetPosition(this);
             paintSurface.Children.Add(newPoint);
         }
 
-        private void DrawRectangle(MouseButtonEventArgs e)
+        private void DrawRectangle()
         {
             Rectangle newRectangle = new Rectangle()
             {
@@ -116,7 +114,6 @@ namespace WpfApplication1
                 newRectangle.Height = start.Y - end.Y;
             }
 
-            end = e.GetPosition(this);
             paintSurface.Children.Add(newRectangle);
         }
 
@@ -138,20 +135,30 @@ namespace WpfApplication1
 
         }
 
+        private void DragButton_Click(object sender, RoutedEventArgs e)
+        {
+            element = (UIElement)sender;
+            currentShape = MyShape.Drag;
+        }
+
+        Point start;
+        Point end;
+        bool isPressed = false;
+
         private void PaintSurface_MouseUp(object sender, MouseButtonEventArgs e)
         {
             switch (currentShape)
             {
                 case MyShape.Line:
-                    DrawLine(e);
+                    DrawLine();
                     break;
 
                 case MyShape.Point:
-                    DrawPoint(e);
+                    DrawPoint();
                     break;
 
                 case MyShape.Rectangle:
-                    DrawRectangle(e);
+                    DrawRectangle();
                     break;
 
                 default:
@@ -171,6 +178,54 @@ namespace WpfApplication1
             {
                 end = e.GetPosition(this);
             }
+
+            if (currentShape == MyShape.Drag && e.OriginalSource is Shape)
+            {
+                Shape ClickedShape = (Shape)e.OriginalSource;
+                if (isPressed)
+                {
+                    Point position = e.GetPosition(paintSurface);
+                    double deltaY = position.Y - start.Y;
+                    double deltaX = position.X - start.X;
+                    ClickedShape.SetValue(Canvas.TopProperty, (double)ClickedShape.GetValue(Canvas.TopProperty) + deltaY);
+                    ClickedShape.SetValue(Canvas.LeftProperty, (double)ClickedShape.GetValue(Canvas.LeftProperty) + deltaX);
+                    start = position;
+                }
+            }
+
         }
+
+
+        private void PaintSurface_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (currentShape == MyShape.Drag && e.OriginalSource is Shape)
+            {
+                Shape ClickedShape = (Shape)e.OriginalSource;
+                ClickedShape.Opacity = 0.5;
+                if (e.ClickCount == 2)
+                {
+                    paintSurface.Children.Remove(ClickedShape);
+                }
+                else
+                {
+                    isPressed = true;
+                    start = e.GetPosition(paintSurface);
+                    ClickedShape.CaptureMouse();
+                }
+            }
+        }
+
+        private void PaintSurface_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (currentShape == MyShape.Drag && e.OriginalSource is Shape)
+            {
+                Shape ClickedShape = (Shape)e.OriginalSource;
+                ClickedShape.Opacity = 1;
+                ClickedShape.ReleaseMouseCapture();
+                isPressed = false;
+            }
+
+        }
+
     }
 }
