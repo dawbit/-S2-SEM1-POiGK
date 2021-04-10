@@ -20,6 +20,7 @@
                 <Button Name="ConverToHsv" Content="Konwersja do HSV" Margin="155,1,117,51" Click="ConverToHsv_Click"/>
                 <Label HorizontalAlignment="Left" Margin="167,37,0,0" VerticalAlignment="Top"/>
                 <Label Name="HsvValue" Content="" Margin="155,24,117,0" FontSize="8" FontWeight="Bold"/>
+                <Button x:Name="EmguCVTest" Content="EmguCV Test" Margin="155,25,117,28" Click="EmguCvTest_Click"/>
             </Grid>
         </ToolBar>
 

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Emgu.CV;
+using Emgu.CV.Structure;
+using Microsoft.Win32;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApplication1
@@ -48,7 +43,7 @@ namespace WpfApplication1
 
         private void DrawPoint()
         {
-            Ellipse newPoint = new Ellipse()
+            System.Windows.Shapes.Ellipse newPoint = new System.Windows.Shapes.Ellipse()
             {
                 Stroke = Brushes.Red,
                 Fill = Brushes.Red,
@@ -346,6 +341,24 @@ namespace WpfApplication1
             RGB data = new RGB(byte.Parse(rValue.Text), byte.Parse(gValue.Text), byte.Parse(bValue.Text));
             HSV value = RGBToHSV(data);
             HsvValue.Content = value.toString();
+        }
+
+        private void EmguCvTest_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "*.jpg|*.jpg";
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.Multiselect = false;
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Image<Bgr, byte> img = new Image<Bgr, byte>(openFileDialog.FileName);
+                Image<Gray, byte> img2 = img.Convert<Gray, byte>();
+                Image<Gray, Single> img_final = img2.Sobel(1, 0, 5);
+                CvInvoke.Imshow("Image", img);
+                CvInvoke.Imshow("Image_final", img_final);
+                CvInvoke.WaitKey(0);
+            }
         }
     }
 }
