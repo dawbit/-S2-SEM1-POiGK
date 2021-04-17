@@ -1,4 +1,5 @@
 ﻿using Emgu.CV;
+using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using Microsoft.Win32;
 using System;
@@ -359,6 +360,24 @@ namespace WpfApplication1
                 CvInvoke.Imshow("Image_final", img_final);
                 CvInvoke.WaitKey(0);
             }
+        }
+
+        private void EmguLinearFiltration_Click(object sender, RoutedEventArgs e)
+        {
+            Mat sourceImage = new Mat(new System.Drawing.Size(500, 500), DepthType.Cv8U, 1);
+            CvInvoke.Randu(sourceImage, new MCvScalar(0.0), new MCvScalar(255.0));
+            Mat laplacian = new Mat();
+            CvInvoke.Laplacian(sourceImage, laplacian, DepthType.Cv8U);
+            float[,] matrixKernel = new float[3, 3] {
+                { 0,-1, 0 },
+                {-1, 5,-1 },
+                { 0,-1, 0 }
+            };
+            ConvolutionKernelF matrix = new ConvolutionKernelF(matrixKernel);
+            Mat convoluted = new Mat(sourceImage.Size, DepthType.Cv8U, 1);
+            CvInvoke.Filter2D(sourceImage, convoluted, matrix, matrix.Center);
+            CvInvoke.Imshow("Image", sourceImage);
+            CvInvoke.WaitKey(0);
         }
     }
 }

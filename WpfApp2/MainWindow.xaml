@@ -21,6 +21,7 @@
                 <Label HorizontalAlignment="Left" Margin="167,37,0,0" VerticalAlignment="Top"/>
                 <Label Name="HsvValue" Content="" Margin="155,24,117,0" FontSize="8" FontWeight="Bold"/>
                 <Button x:Name="EmguCVTest" Content="EmguCV Test" Margin="155,25,117,28" Click="EmguCvTest_Click"/>
+                <Button x:Name="EmguLinearFiltering" Content="Emgu linear filt." Margin="155,48,117,5" Click="EmguLinearFiltration_Click"/>
             </Grid>
         </ToolBar>
 
