@@ -1,11 +1,22 @@
 doc.rar
-meshroom_models
+!meshroom_models
+meshroom_models/*
 
+meshroom_models/bull/*
+!meshroom_models/bull/MeshroomCache/
+meshroom_models/bull/MeshroomCache/*
 !meshroom_models/bull/MeshroomCache/Texturing
 !meshroom_models/bull/bull_model.mg
 
+meshroom_models/bull_2/*
+!meshroom_models/bull_2/MeshroomCache/
+meshroom_models/bull_2/MeshroomCache/*
 !meshroom_models/bull_2/MeshroomCache/Texturing
 !meshroom_models/bull_2/bull_2_model.mg
 
+
+meshroom_models/ships/*
+!meshroom_models/ships/MeshroomCache/
+meshroom_models/ships/MeshroomCache/*
 !meshroom_models/ships/MeshroomCache/Texturing
 !meshroom_models/ships/project.mg
