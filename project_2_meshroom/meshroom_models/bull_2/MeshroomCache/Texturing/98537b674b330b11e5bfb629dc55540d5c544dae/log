@@ -1,0 +1,84 @@
+Program called with the following parameters:
+ * angleHardThreshold = 90
+ * bestScoreThreshold = 0.1
+ * correctEV = 0
+ * downscale =  Unknown Type "unsigned int"
+ * fillHoles = 0
+ * flipNormals = 0
+ * forceVisibleByAllVertices = 0
+ * imagesFolder = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/PrepareDenseScene/d99c988ac68343b5024558251ce738aea7e5738e"
+ * input = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Meshing/74dae8b239e92cadcfd835e7725925cc29a36662/densePointCloud.abc"
+ * inputMesh = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/MeshFiltering/ad55208e8691e094be7d220eccf8023b41a9b81a/mesh.obj"
+ * multiBandDownscale =  Unknown Type "unsigned int"
+ * multiBandNbContrib =  Unknown Type "class std::vector<int,class std::allocator<int> >"
+ * output = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Texturing/98537b674b330b11e5bfb629dc55540d5c544dae"
+ * outputTextureFileType = "png"
+ * padding =  Unknown Type "unsigned int"
+ * processColorspace = "sRGB"
+ * subdivisionTargetRatio = 0.8
+ * textureSide =  Unknown Type "unsigned int"
+ * unwrapMethod = "Basic"
+ * useScore = 1
+ * useUDIM = 1
+ * verboseLevel = "info"
+ * visibilityRemappingMethod = "PullPush"
+
+[11:21:21.390652][info] Load dense point cloud.
+[11:21:21.503426][warning] Alembic LOAD: NO OBSERVATIONS_WITH_FEATURES: , mvg_visibilityFeatId: 0, mvg_visibilityFeatPos: 0, OBSERVATIONS_WITH_FEATURES flag: false
+[11:21:21.874155][info] Found 1 image dimension(s): 
+[11:21:21.874155][info] 	- [4000x2000]
+[11:21:23.334955][info] Overall maximum dimension: [4000x2000]
+[11:21:23.334955][info] Load input mesh.
+[11:21:23.334955][info] Loading mesh from obj file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/MeshFiltering/ad55208e8691e094be7d220eccf8023b41a9b81a/mesh.obj
+[11:21:23.519318][info] 	- # vertices: 90876
+	- # normals: 0
+	- # uv coordinates: 0
+	- # triangles: 180549
+[11:21:24.109090][info] Mesh loaded: 
+	- #points: 90876
+	- # triangles: 180549
+[11:21:24.115337][info] Convert dense point cloud into ref mesh
+[11:21:24.313902][info] remapMeshVisibility based on triangles start.
+[11:21:25.167262][info] remapMeshVisibility done.
+[11:21:25.172541][info] Input mesh has no UV coordinates, start unwrapping (Basic)
+[11:21:25.172541][info] Generating UVs (textureSide: 16384; padding: 5).
+[11:21:25.172541][info] Creating texture charts.
+[11:21:27.485112][info] Packing texture charts (180549 charts).
+[11:21:28.489223][info] Finalize packed charts (4907 charts).
+[11:21:28.544121][info] Creating texture atlases.
+[11:21:28.549586][info] 	- texture atlas 1
+[11:21:28.688884][info] Filled with 4907 charts.
+[11:21:28.881697][info] Unwrapping done.
+[11:21:28.881697][info] Writing obj and mtl file.
+[11:21:29.718886][info] Writing done: 
+	- obj file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Texturing/98537b674b330b11e5bfb629dc55540d5c544dae\texturedMesh.obj
+	- mtl file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Texturing/98537b674b330b11e5bfb629dc55540d5c544dae\texturedMesh.mtl
+[11:21:29.718886][info] Subdivide mesh.
+[11:21:29.718886][info] nb pts init: 90876
+[11:21:29.718886][info] nb tris init: 180549
+[11:21:29.718886][info] nb points in refMesh: 90876
+[11:21:29.718886][info] targetNbPts: 72700
+[11:21:29.783538][info] No subdivision needed.
+[11:21:29.783538][info] Number of triangle subdivisions: 0
+[11:21:29.783538][info] updateAtlases
+[11:21:29.934660][info] remapMeshVisibility based on triangles start.
+[11:21:30.745986][info] remapMeshVisibility done.
+[11:21:30.750206][info] Generate textures.
+[11:21:30.750206][info] Texturing: Use multiband blending with the following contributions per band:
+[11:21:30.750206][info]   - 1
+[11:21:30.750206][info]   - 5
+[11:21:30.750206][info]   - 10
+[11:21:30.750206][info] Texturing in sRGB colorspace.
+[11:21:30.750206][info] Images loaded from cache with: no exposure correction
+[11:21:30.750206][info] nbAtlas: 1
+[11:21:30.750206][info] availableRam: 9749
+[11:21:30.750206][info] availableMem: 9021
+[11:21:30.750206][info] memoryPerAtlas: 12652
+[11:21:30.750206][info] nbAtlasMax (after rounding): 0
+[11:21:30.750206][info] Total amount of available RAM: 9749 MB.
+[11:21:30.750206][info] Total amount of memory remaining for the computation: 9021 MB.
+[11:21:30.750206][info] Total amount of an image in memory: 91 MB.
+[11:21:30.750206][info] Total amount of an atlas pyramid in memory: 12288 MB.
+[11:21:30.750206][info] Processing 1 atlases by chunks of 1
+[11:21:30.750206][info] Generating texture for atlases 1 to 1
+[11:21:30.750206][info] Generating texture for atlas 1/1 (180291 triangles).

@@ -1,6 +1,4 @@
 doc.rar
-!meshroom_models/
-meshroom_models/*
 
 meshroom_models/bull/*
 !meshroom_models/bull/MeshroomCache/

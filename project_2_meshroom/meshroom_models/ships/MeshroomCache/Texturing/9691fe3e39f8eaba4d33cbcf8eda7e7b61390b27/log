@@ -1,0 +1,876 @@
+Program called with the following parameters:
+ * angleHardThreshold = 90
+ * bestScoreThreshold = 0.1
+ * correctEV = 0
+ * downscale =  Unknown Type "unsigned int"
+ * fillHoles = 0
+ * flipNormals = 0
+ * forceVisibleByAllVertices = 0
+ * imagesFolder = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/PrepareDenseScene/e79a785bc0ae63945711782582c43bfcbc1319e7"
+ * input = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Meshing/8d7f85f27a76dfbf38b874bada3516fc92c2d69e/densePointCloud.abc"
+ * inputMesh = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/MeshFiltering/7e3676d44ff7e977eb817e30fee553417d4a927b/mesh.obj"
+ * multiBandDownscale =  Unknown Type "unsigned int"
+ * multiBandNbContrib =  Unknown Type "class std::vector<int,class std::allocator<int> >"
+ * output = "D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Texturing/9691fe3e39f8eaba4d33cbcf8eda7e7b61390b27"
+ * outputTextureFileType = "png"
+ * padding =  Unknown Type "unsigned int"
+ * processColorspace = "sRGB"
+ * subdivisionTargetRatio = 0.8
+ * textureSide =  Unknown Type "unsigned int"
+ * unwrapMethod = "Basic"
+ * useScore = 1
+ * useUDIM = 1
+ * verboseLevel = "info"
+ * visibilityRemappingMethod = "PullPush"
+
+[21:36:05.289722][info] Load dense point cloud.
+[21:36:05.354056][warning] Alembic LOAD: NO OBSERVATIONS_WITH_FEATURES: , mvg_visibilityFeatId: 0, mvg_visibilityFeatPos: 0, OBSERVATIONS_WITH_FEATURES flag: false
+[21:36:05.819778][info] Found 1 image dimension(s): 
+[21:36:05.819778][info] 	- [4608x3456]
+[21:36:06.282878][info] Overall maximum dimension: [4608x3456]
+[21:36:06.283851][info] Load input mesh.
+[21:36:06.283851][info] Loading mesh from obj file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/MeshFiltering/7e3676d44ff7e977eb817e30fee553417d4a927b/mesh.obj
+[21:36:06.309587][info] 	- # vertices: 10658
+	- # normals: 0
+	- # uv coordinates: 0
+	- # triangles: 20924
+[21:36:06.400914][info] Mesh loaded: 
+	- #points: 10658
+	- # triangles: 20924
+[21:36:06.400914][info] Convert dense point cloud into ref mesh
+[21:36:06.444770][info] remapMeshVisibility based on triangles start.
+[21:36:06.560511][info] remapMeshVisibility done.
+[21:36:06.560511][info] Input mesh has no UV coordinates, start unwrapping (Basic)
+[21:36:06.562549][info] Generating UVs (textureSide: 8192; padding: 5).
+[21:36:06.562549][info] Creating texture charts.
+[21:36:07.172060][info] Packing texture charts (20924 charts).
+[21:36:07.329919][info] Finalize packed charts (656 charts).
+[21:36:07.329919][info] Creating texture atlases.
+[21:36:07.329919][info] 	- texture atlas 1
+[21:36:07.340012][info] Filled with 366 charts.
+[21:36:07.340012][info] 	- texture atlas 2
+[21:36:07.343561][info] Filled with 290 charts.
+[21:36:07.369686][info] Unwrapping done.
+[21:36:07.369686][info] Writing obj and mtl file.
+[21:36:07.516078][info] Writing done: 
+	- obj file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Texturing/9691fe3e39f8eaba4d33cbcf8eda7e7b61390b27\texturedMesh.obj
+	- mtl file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Texturing/9691fe3e39f8eaba4d33cbcf8eda7e7b61390b27\texturedMesh.mtl
+[21:36:07.519599][info] Subdivide mesh.
+[21:36:07.519652][info] nb pts init: 10658
+[21:36:07.519652][info] nb tris init: 20924
+[21:36:07.519652][info] nb points in refMesh: 10658
+[21:36:07.519652][info] targetNbPts: 8526
+[21:36:07.524661][info] No subdivision needed.
+[21:36:07.524661][info] Number of triangle subdivisions: 0
+[21:36:07.524661][info] updateAtlases
+[21:36:07.559809][info] remapMeshVisibility based on triangles start.
+[21:36:07.737112][info] remapMeshVisibility done.
+[21:36:07.737112][info] Generate textures.
+[21:36:07.737112][info] Texturing: Use multiband blending with the following contributions per band:
+[21:36:07.737112][info]   - 1
+[21:36:07.737112][info]   - 5
+[21:36:07.737112][info]   - 10
+[21:36:07.737112][info] Texturing in sRGB colorspace.
+[21:36:07.737112][info] Images loaded from cache with: no exposure correction
+[21:36:07.739642][info] nbAtlas: 2
+[21:36:07.739642][info] availableRam: 9828
+[21:36:07.739642][info] availableMem: 8372
+[21:36:07.739642][info] memoryPerAtlas: 3800
+[21:36:07.739642][info] nbAtlasMax (after rounding): 2
+[21:36:07.739642][info] Total amount of available RAM: 9828 MB.
+[21:36:07.739642][info] Total amount of memory remaining for the computation: 8372 MB.
+[21:36:07.739642][info] Total amount of an image in memory: 182 MB.
+[21:36:07.739642][info] Total amount of an atlas pyramid in memory: 3072 MB.
+[21:36:07.739642][info] Processing 2 atlases by chunks of 2
+[21:36:07.739642][info] Generating texture for atlases 1 to 2
+[21:36:07.739642][info] Generating texture for atlas 1/2 (12733 triangles).
+[21:36:08.801008][info] Generating texture for atlas 2/2 (8170 triangles).
+[21:36:09.609661][info] Reading pixel color.
+[21:36:14.916147][info] - camera 38529649 (1/97) with contributions to 2 texture files:
+[21:36:22.159617][info]   - Texture file: 1
+[21:36:22.159617][info]       - band 1: 122 triangles.
+[21:36:22.233868][info]       - band 2: 876 triangles.
+[21:36:22.874683][info]       - band 3: 1188 triangles.
+[21:36:23.364927][info]   - Texture file: 2
+[21:36:23.364927][info]       - band 1: 209 triangles.
+[21:36:23.589804][info]       - band 2: 743 triangles.
+[21:36:24.238033][info]       - band 3: 942 triangles.
+[21:36:24.879957][info] - camera 41765026 (2/97) with contributions to 2 texture files:
+[21:36:31.154429][info]   - Texture file: 1
+[21:36:31.154429][info]       - band 1: 230 triangles.
+[21:36:31.267359][info]       - band 2: 603 triangles.
+[21:36:31.552687][info]       - band 3: 673 triangles.
+[21:36:31.851836][info]   - Texture file: 2
+[21:36:31.851836][info]       - band 1: 102 triangles.
+[21:36:31.925891][info]       - band 2: 347 triangles.
+[21:36:32.119729][info]       - band 3: 611 triangles.
+[21:36:32.512911][info] - camera 54839111 (3/97) with contributions to 2 texture files:
+[21:36:38.100623][info]   - Texture file: 1
+[21:36:38.100623][info]       - band 1: 122 triangles.
+[21:36:38.204880][info]       - band 2: 1398 triangles.
+[21:36:38.934100][info]       - band 3: 3569 triangles.
+[21:36:40.653677][info]   - Texture file: 2
+[21:36:40.653677][info]       - band 1: 82 triangles.
+[21:36:40.749698][info]       - band 2: 794 triangles.
+[21:36:41.199810][info]       - band 3: 1410 triangles.
+[21:36:41.935521][info] - camera 59208723 (4/97) with contributions to 2 texture files:
+[21:36:47.791003][info]   - Texture file: 1
+[21:36:47.791003][info]       - band 1: 21 triangles.
+[21:36:47.814624][info]       - band 2: 126 triangles.
+[21:36:47.902095][info]       - band 3: 644 triangles.
+[21:36:48.207010][info]   - Texture file: 2
+[21:36:48.207010][info]       - band 1: 89 triangles.
+[21:36:48.260620][info]       - band 2: 202 triangles.
+[21:36:48.394533][info]       - band 3: 659 triangles.
+[21:36:48.877822][info] - camera 107278794 (5/97) with contributions to 2 texture files:
+[21:36:54.710748][info]   - Texture file: 1
+[21:36:54.710748][info]       - band 1: 138 triangles.
+[21:36:54.814555][info]       - band 2: 370 triangles.
+[21:36:54.992866][info]       - band 3: 970 triangles.
+[21:36:55.364687][info]   - Texture file: 2
+[21:36:55.364687][info]       - band 1: 178 triangles.
+[21:36:55.525967][info]       - band 2: 406 triangles.
+[21:36:55.777839][info]       - band 3: 703 triangles.
+[21:36:56.276805][info] - camera 114593494 (6/97) unused.
+[21:36:56.277808][info] - camera 150835258 (7/97) with contributions to 2 texture files:
+[21:37:02.275566][info]   - Texture file: 1
+[21:37:02.275566][info]       - band 1: 71 triangles.
+[21:37:02.355690][info]       - band 2: 1182 triangles.
+[21:37:03.027997][info]       - band 3: 614 triangles.
+[21:37:03.314231][info]   - Texture file: 2
+[21:37:03.314231][info]       - band 1: 47 triangles.
+[21:37:03.362106][info]       - band 2: 200 triangles.
+[21:37:03.486780][info]       - band 3: 379 triangles.
+[21:37:03.798936][info] - camera 163719734 (8/97) with contributions to 2 texture files:
+[21:37:09.422510][info]   - Texture file: 1
+[21:37:09.422510][info]       - band 1: 2 triangles.
+[21:37:09.422510][info]       - band 2: 5 triangles.
+[21:37:09.429798][info]       - band 3: 20 triangles.
+[21:37:09.440683][info]   - Texture file: 2
+[21:37:09.440683][info]       - band 1: 0 triangles.
+[21:37:09.440683][info]       - band 2: 12 triangles.
+[21:37:09.448156][info]       - band 3: 7 triangles.
+[21:37:09.502789][info] - camera 186262157 (9/97) unused.
+[21:37:09.502789][info] - camera 203764351 (10/97) with contributions to 2 texture files:
+[21:37:15.199436][info]   - Texture file: 1
+[21:37:15.199436][info]       - band 1: 32 triangles.
+[21:37:15.214455][info]       - band 2: 1283 triangles.
+[21:37:15.801352][info]       - band 3: 2541 triangles.
+[21:37:17.024610][info]   - Texture file: 2
+[21:37:17.024610][info]       - band 1: 138 triangles.
+[21:37:17.156259][info]       - band 2: 929 triangles.
+[21:37:17.820484][info]       - band 3: 1176 triangles.
+[21:37:18.444373][info] - camera 211494034 (11/97) with contributions to 2 texture files:
+[21:37:24.575050][info]   - Texture file: 1
+[21:37:24.575050][info]       - band 1: 189 triangles.
+[21:37:24.724722][info]       - band 2: 1442 triangles.
+[21:37:25.626553][info]       - band 3: 1838 triangles.
+[21:37:26.512941][info]   - Texture file: 2
+[21:37:26.512941][info]       - band 1: 71 triangles.
+[21:37:26.571784][info]       - band 2: 1005 triangles.
+[21:37:27.237929][info]       - band 3: 1586 triangles.
+[21:37:28.104538][info] - camera 218584299 (12/97) with contributions to 2 texture files:
+[21:37:33.809741][info]   - Texture file: 1
+[21:37:33.809741][info]       - band 1: 367 triangles.
+[21:37:34.023426][info]       - band 2: 537 triangles.
+[21:37:34.380064][info]       - band 3: 1332 triangles.
+[21:37:34.996866][info]   - Texture file: 2
+[21:37:34.996866][info]       - band 1: 292 triangles.
+[21:37:35.206152][info]       - band 2: 405 triangles.
+[21:37:35.490582][info]       - band 3: 981 triangles.
+[21:37:36.169041][info] - camera 220655263 (13/97) with contributions to 2 texture files:
+[21:37:41.659435][info]   - Texture file: 1
+[21:37:41.659435][info]       - band 1: 16 triangles.
+[21:37:41.690993][info]       - band 2: 429 triangles.
+[21:37:41.987531][info]       - band 3: 2209 triangles.
+[21:37:43.026330][info]   - Texture file: 2
+[21:37:43.026330][info]       - band 1: 43 triangles.
+[21:37:43.067023][info]       - band 2: 475 triangles.
+[21:37:43.355119][info]       - band 3: 1423 triangles.
+[21:37:44.135863][info] - camera 220724796 (14/97) with contributions to 2 texture files:
+[21:37:49.740208][info]   - Texture file: 1
+[21:37:49.740208][info]       - band 1: 48 triangles.
+[21:37:49.769517][info]       - band 2: 194 triangles.
+[21:37:49.881690][info]       - band 3: 762 triangles.
+[21:37:50.169768][info]   - Texture file: 2
+[21:37:50.169768][info]       - band 1: 56 triangles.
+[21:37:50.205930][info]       - band 2: 162 triangles.
+[21:37:50.319633][info]       - band 3: 614 triangles.
+[21:37:50.771418][info] - camera 223891888 (15/97) unused.
+[21:37:50.772414][info] - camera 263875934 (16/97) with contributions to 2 texture files:
+[21:37:56.538996][info]   - Texture file: 1
+[21:37:56.538996][info]       - band 1: 31 triangles.
+[21:37:56.604817][info]       - band 2: 502 triangles.
+[21:37:56.918356][info]       - band 3: 1824 triangles.
+[21:37:57.831342][info]   - Texture file: 2
+[21:37:57.831342][info]       - band 1: 52 triangles.
+[21:37:57.889962][info]       - band 2: 541 triangles.
+[21:37:58.281511][info]       - band 3: 949 triangles.
+[21:37:58.901005][info] - camera 293716818 (17/97) with contributions to 2 texture files:
+[21:38:04.521873][info]   - Texture file: 1
+[21:38:04.521873][info]       - band 1: 342 triangles.
+[21:38:04.785053][info]       - band 2: 487 triangles.
+[21:38:05.038750][info]       - band 3: 1086 triangles.
+[21:38:05.463795][info]   - Texture file: 2
+[21:38:05.463795][info]       - band 1: 89 triangles.
+[21:38:05.533001][info]       - band 2: 368 triangles.
+[21:38:05.777014][info]       - band 3: 863 triangles.
+[21:38:06.249877][info] - camera 294811587 (18/97) with contributions to 2 texture files:
+[21:38:11.869441][info]   - Texture file: 1
+[21:38:11.869441][info]       - band 1: 172 triangles.
+[21:38:12.043731][info]       - band 2: 985 triangles.
+[21:38:12.815086][info]       - band 3: 1891 triangles.
+[21:38:15.173874][info]   - Texture file: 2
+[21:38:15.173874][info]       - band 1: 335 triangles.
+[21:38:15.670298][info]       - band 2: 874 triangles.
+[21:38:16.300337][info]       - band 3: 1395 triangles.
+[21:38:17.053800][info] - camera 295405276 (19/97) with contributions to 2 texture files:
+[21:38:25.005181][info]   - Texture file: 1
+[21:38:25.005181][info]       - band 1: 66 triangles.
+[21:38:25.086790][info]       - band 2: 878 triangles.
+[21:38:25.679613][info]       - band 3: 2350 triangles.
+[21:38:27.129817][info]   - Texture file: 2
+[21:38:27.129817][info]       - band 1: 81 triangles.
+[21:38:27.174887][info]       - band 2: 580 triangles.
+[21:38:27.644720][info]       - band 3: 1860 triangles.
+[21:38:28.956904][info] - camera 301889158 (20/97) with contributions to 2 texture files:
+[21:38:35.079542][info]   - Texture file: 1
+[21:38:35.079542][info]       - band 1: 162 triangles.
+[21:38:35.201952][info]       - band 2: 464 triangles.
+[21:38:35.429612][info]       - band 3: 575 triangles.
+[21:38:35.698576][info]   - Texture file: 2
+[21:38:35.698576][info]       - band 1: 191 triangles.
+[21:38:35.850057][info]       - band 2: 302 triangles.
+[21:38:36.011903][info]       - band 3: 293 triangles.
+[21:38:36.162692][info] - camera 321225182 (21/97) with contributions to 2 texture files:
+[21:38:42.189520][info]   - Texture file: 1
+[21:38:42.189520][info]       - band 1: 7 triangles.
+[21:38:42.194531][info]       - band 2: 118 triangles.
+[21:38:42.379442][info]       - band 3: 763 triangles.
+[21:38:42.805956][info]   - Texture file: 2
+[21:38:42.805956][info]       - band 1: 24 triangles.
+[21:38:42.839399][info]       - band 2: 85 triangles.
+[21:38:42.964065][info]       - band 3: 542 triangles.
+[21:38:43.320118][info] - camera 332331516 (22/97) with contributions to 2 texture files:
+[21:38:48.859657][info]   - Texture file: 1
+[21:38:48.859657][info]       - band 1: 148 triangles.
+[21:38:49.032726][info]       - band 2: 571 triangles.
+[21:38:49.436930][info]       - band 3: 1234 triangles.
+[21:38:50.062257][info]   - Texture file: 2
+[21:38:50.062257][info]       - band 1: 67 triangles.
+[21:38:50.132072][info]       - band 2: 516 triangles.
+[21:38:50.484135][info]       - band 3: 868 triangles.
+[21:38:50.958861][info] - camera 341242958 (23/97) with contributions to 2 texture files:
+[21:38:56.865322][info]   - Texture file: 1
+[21:38:56.865322][info]       - band 1: 1218 triangles.
+[21:38:57.769858][info]       - band 2: 724 triangles.
+[21:38:58.244998][info]       - band 3: 1054 triangles.
+[21:38:58.737885][info]   - Texture file: 2
+[21:38:58.737885][info]       - band 1: 44 triangles.
+[21:38:58.774795][info]       - band 2: 108 triangles.
+[21:38:58.848601][info]       - band 3: 375 triangles.
+[21:38:59.071023][info] - camera 341269915 (24/97) with contributions to 2 texture files:
+[21:39:05.231386][info]   - Texture file: 1
+[21:39:05.231386][info]       - band 1: 395 triangles.
+[21:39:05.609782][info]       - band 2: 561 triangles.
+[21:39:05.935014][info]       - band 3: 962 triangles.
+[21:39:06.334701][info]   - Texture file: 2
+[21:39:06.334701][info]       - band 1: 139 triangles.
+[21:39:06.439919][info]       - band 2: 328 triangles.
+[21:39:06.659883][info]       - band 3: 922 triangles.
+[21:39:07.155026][info] - camera 346783357 (25/97) with contributions to 2 texture files:
+[21:39:13.523283][info]   - Texture file: 1
+[21:39:13.523283][info]       - band 1: 94 triangles.
+[21:39:13.574090][info]       - band 2: 665 triangles.
+[21:39:13.969700][info]       - band 3: 2108 triangles.
+[21:39:14.875023][info]   - Texture file: 2
+[21:39:14.875023][info]       - band 1: 39 triangles.
+[21:39:14.918756][info]       - band 2: 458 triangles.
+[21:39:15.194755][info]       - band 3: 1331 triangles.
+[21:39:15.932502][info] - camera 355279333 (26/97) with contributions to 2 texture files:
+[21:39:22.419606][info]   - Texture file: 1
+[21:39:22.419606][info]       - band 1: 684 triangles.
+[21:39:22.866567][info]       - band 2: 439 triangles.
+[21:39:23.288938][info]       - band 3: 1038 triangles.
+[21:39:23.930773][info]   - Texture file: 2
+[21:39:23.930773][info]       - band 1: 123 triangles.
+[21:39:24.015174][info]       - band 2: 360 triangles.
+[21:39:24.241791][info]       - band 3: 798 triangles.
+[21:39:24.740455][info] - camera 359010336 (27/97) with contributions to 2 texture files:
+[21:39:30.395019][info]   - Texture file: 1
+[21:39:30.395019][info]       - band 1: 12 triangles.
+[21:39:30.404102][info]       - band 2: 328 triangles.
+[21:39:30.690755][info]       - band 3: 1877 triangles.
+[21:39:31.596078][info]   - Texture file: 2
+[21:39:31.600117][info]       - band 1: 23 triangles.
+[21:39:31.625877][info]       - band 2: 217 triangles.
+[21:39:31.829909][info]       - band 3: 1026 triangles.
+[21:39:32.575444][info] - camera 390608040 (28/97) with contributions to 2 texture files:
+[21:39:38.407899][info]   - Texture file: 1
+[21:39:38.407899][info]       - band 1: 49 triangles.
+[21:39:38.444061][info]       - band 2: 845 triangles.
+[21:39:38.989784][info]       - band 3: 1564 triangles.
+[21:39:39.837818][info]   - Texture file: 2
+[21:39:39.837818][info]       - band 1: 14 triangles.
+[21:39:39.851774][info]       - band 2: 104 triangles.
+[21:39:40.035005][info]       - band 3: 552 triangles.
+[21:39:40.519905][info] - camera 418453726 (29/97) with contributions to 2 texture files:
+[21:39:46.693282][info]   - Texture file: 1
+[21:39:46.693282][info]       - band 1: 217 triangles.
+[21:39:46.864648][info]       - band 2: 1053 triangles.
+[21:39:47.329970][info]       - band 3: 1428 triangles.
+[21:39:47.944754][info]   - Texture file: 2
+[21:39:47.944754][info]       - band 1: 271 triangles.
+[21:39:48.159874][info]       - band 2: 612 triangles.
+[21:39:48.476196][info]       - band 3: 747 triangles.
+[21:39:48.929864][info] - camera 438550729 (30/97) with contributions to 2 texture files:
+[21:39:55.175206][info]   - Texture file: 1
+[21:39:55.175206][info]       - band 1: 0 triangles.
+[21:39:55.175206][info]       - band 2: 2 triangles.
+[21:39:55.175206][info]       - band 3: 13 triangles.
+[21:39:55.181765][info]   - Texture file: 2
+[21:39:55.181765][info]       - band 1: 0 triangles.
+[21:39:55.181765][info]       - band 2: 0 triangles.
+[21:39:55.181765][info]       - band 3: 7 triangles.
+[21:39:55.235866][info] - camera 492684761 (31/97) with contributions to 2 texture files:
+[21:40:01.637778][info]   - Texture file: 1
+[21:40:01.637778][info]       - band 1: 371 triangles.
+[21:40:01.919088][info]       - band 2: 1122 triangles.
+[21:40:02.588475][info]       - band 3: 1860 triangles.
+[21:40:03.569375][info]   - Texture file: 2
+[21:40:03.569375][info]       - band 1: 191 triangles.
+[21:40:03.665202][info]       - band 2: 877 triangles.
+[21:40:04.182997][info]       - band 3: 1586 triangles.
+[21:40:05.074542][info] - camera 547478239 (32/97) with contributions to 2 texture files:
+[21:40:11.074571][info]   - Texture file: 1
+[21:40:11.074571][info]       - band 1: 43 triangles.
+[21:40:11.134488][info]       - band 2: 342 triangles.
+[21:40:11.389713][info]       - band 3: 1847 triangles.
+[21:40:12.450451][info]   - Texture file: 2
+[21:40:12.451451][info]       - band 1: 46 triangles.
+[21:40:12.519436][info]       - band 2: 240 triangles.
+[21:40:12.749931][info]       - band 3: 1081 triangles.
+[21:40:13.604351][info] - camera 559670945 (33/97) with contributions to 2 texture files:
+[21:40:19.403677][info]   - Texture file: 1
+[21:40:19.403677][info]       - band 1: 235 triangles.
+[21:40:19.598651][info]       - band 2: 1495 triangles.
+[21:40:20.254440][info]       - band 3: 1361 triangles.
+[21:40:20.795863][info]   - Texture file: 2
+[21:40:20.795863][info]       - band 1: 218 triangles.
+[21:40:21.044199][info]       - band 2: 901 triangles.
+[21:40:21.559820][info]       - band 3: 1073 triangles.
+[21:40:22.112821][info] - camera 565910290 (34/97) unused.
+[21:40:22.114812][info] - camera 579690765 (35/97) with contributions to 2 texture files:
+[21:40:29.265158][info]   - Texture file: 1
+[21:40:29.265158][info]       - band 1: 169 triangles.
+[21:40:29.352448][info]       - band 2: 1476 triangles.
+[21:40:30.059777][info]       - band 3: 1617 triangles.
+[21:40:30.776558][info]   - Texture file: 2
+[21:40:30.776558][info]       - band 1: 201 triangles.
+[21:40:30.901742][info]       - band 2: 1030 triangles.
+[21:40:31.401457][info]       - band 3: 983 triangles.
+[21:40:31.958509][info] - camera 595942850 (36/97) with contributions to 2 texture files:
+[21:40:37.881562][info]   - Texture file: 1
+[21:40:37.881562][info]       - band 1: 64 triangles.
+[21:40:37.989613][info]       - band 2: 1286 triangles.
+[21:40:38.706178][info]       - band 3: 1377 triangles.
+[21:40:39.389920][info]   - Texture file: 2
+[21:40:39.389920][info]       - band 1: 53 triangles.
+[21:40:39.428294][info]       - band 2: 489 triangles.
+[21:40:39.729831][info]       - band 3: 789 triangles.
+[21:40:40.213813][info] - camera 602262528 (37/97) with contributions to 2 texture files:
+[21:40:46.672037][info]   - Texture file: 1
+[21:40:46.672037][info]       - band 1: 548 triangles.
+[21:40:47.019656][info]       - band 2: 491 triangles.
+[21:40:47.335032][info]       - band 3: 714 triangles.
+[21:40:47.791078][info]   - Texture file: 2
+[21:40:47.791078][info]       - band 1: 252 triangles.
+[21:40:48.065071][info]       - band 2: 369 triangles.
+[21:40:48.355065][info]       - band 3: 781 triangles.
+[21:40:48.878727][info] - camera 603884325 (38/97) with contributions to 2 texture files:
+[21:40:55.784575][info]   - Texture file: 1
+[21:40:55.784575][info]       - band 1: 11 triangles.
+[21:40:55.802560][info]       - band 2: 545 triangles.
+[21:40:56.106253][info]       - band 3: 1299 triangles.
+[21:40:56.696693][info]   - Texture file: 2
+[21:40:56.696693][info]       - band 1: 22 triangles.
+[21:40:56.713753][info]       - band 2: 307 triangles.
+[21:40:56.932764][info]       - band 3: 871 triangles.
+[21:40:57.387787][info] - camera 630476298 (39/97) with contributions to 2 texture files:
+[21:41:03.199868][info]   - Texture file: 1
+[21:41:03.199868][info]       - band 1: 9 triangles.
+[21:41:03.245250][info]       - band 2: 150 triangles.
+[21:41:03.416675][info]       - band 3: 749 triangles.
+[21:41:03.777896][info]   - Texture file: 2
+[21:41:03.779930][info]       - band 1: 14 triangles.
+[21:41:03.800038][info]       - band 2: 209 triangles.
+[21:41:03.929811][info]       - band 3: 582 triangles.
+[21:41:04.309988][info] - camera 635469084 (40/97) with contributions to 2 texture files:
+[21:41:10.194548][info]   - Texture file: 1
+[21:41:10.194548][info]       - band 1: 15 triangles.
+[21:41:10.224519][info]       - band 2: 610 triangles.
+[21:41:10.784732][info]       - band 3: 1229 triangles.
+[21:41:11.510334][info]   - Texture file: 2
+[21:41:11.510334][info]       - band 1: 15 triangles.
+[21:41:11.514907][info]       - band 2: 297 triangles.
+[21:41:11.674904][info]       - band 3: 659 triangles.
+[21:41:12.059777][info] - camera 711356840 (41/97) with contributions to 2 texture files:
+[21:41:17.909649][info]   - Texture file: 1
+[21:41:17.909649][info]       - band 1: 55 triangles.
+[21:41:17.964655][info]       - band 2: 277 triangles.
+[21:41:18.193827][info]       - band 3: 1240 triangles.
+[21:41:18.807494][info]   - Texture file: 2
+[21:41:18.807494][info]       - band 1: 19 triangles.
+[21:41:18.820062][info]       - band 2: 192 triangles.
+[21:41:18.999799][info]       - band 3: 580 triangles.
+[21:41:19.411584][info] - camera 826621607 (42/97) unused.
+[21:41:19.411584][info] - camera 834575900 (43/97) with contributions to 2 texture files:
+[21:41:25.428546][info]   - Texture file: 1
+[21:41:25.428546][info]       - band 1: 107 triangles.
+[21:41:25.511764][info]       - band 2: 1015 triangles.
+[21:41:26.088499][info]       - band 3: 2177 triangles.
+[21:41:27.299364][info]   - Texture file: 2
+[21:41:27.299364][info]       - band 1: 116 triangles.
+[21:41:27.396622][info]       - band 2: 1117 triangles.
+[21:41:28.245463][info]       - band 3: 1517 triangles.
+[21:41:29.132658][info] - camera 917192287 (44/97) with contributions to 2 texture files:
+[21:41:34.730370][info]   - Texture file: 1
+[21:41:34.730370][info]       - band 1: 76 triangles.
+[21:41:34.788066][info]       - band 2: 504 triangles.
+[21:41:35.044534][info]       - band 3: 3318 triangles.
+[21:41:36.583723][info]   - Texture file: 2
+[21:41:36.583723][info]       - band 1: 34 triangles.
+[21:41:36.642565][info]       - band 2: 432 triangles.
+[21:41:37.002648][info]       - band 3: 1479 triangles.
+[21:41:37.821131][info] - camera 942725117 (45/97) with contributions to 2 texture files:
+[21:41:44.224496][info]   - Texture file: 1
+[21:41:44.224496][info]       - band 1: 61 triangles.
+[21:41:44.279256][info]       - band 2: 1660 triangles.
+[21:41:45.301162][info]       - band 3: 1696 triangles.
+[21:41:46.130494][info]   - Texture file: 2
+[21:41:46.130494][info]       - band 1: 47 triangles.
+[21:41:46.164585][info]       - band 2: 933 triangles.
+[21:41:46.758514][info]       - band 3: 1540 triangles.
+[21:41:47.528176][info] - camera 971562384 (46/97) with contributions to 2 texture files:
+[21:41:53.650967][info]   - Texture file: 1
+[21:41:53.650967][info]       - band 1: 161 triangles.
+[21:41:53.731821][info]       - band 2: 374 triangles.
+[21:41:53.953691][info]       - band 3: 548 triangles.
+[21:41:54.207398][info]   - Texture file: 2
+[21:41:54.207398][info]       - band 1: 252 triangles.
+[21:41:54.365359][info]       - band 2: 201 triangles.
+[21:41:54.498266][info]       - band 3: 247 triangles.
+[21:41:54.689978][info] - camera 1056968857 (47/97) with contributions to 2 texture files:
+[21:42:00.878947][info]   - Texture file: 1
+[21:42:00.878947][info]       - band 1: 42 triangles.
+[21:42:00.924529][info]       - band 2: 838 triangles.
+[21:42:01.390008][info]       - band 3: 722 triangles.
+[21:42:01.714086][info]   - Texture file: 2
+[21:42:01.714086][info]       - band 1: 34 triangles.
+[21:42:01.746412][info]       - band 2: 306 triangles.
+[21:42:01.939658][info]       - band 3: 546 triangles.
+[21:42:02.336514][info] - camera 1092030927 (48/97) with contributions to 2 texture files:
+[21:42:08.299132][info]   - Texture file: 1
+[21:42:08.305118][info]       - band 1: 17 triangles.
+[21:42:08.321074][info]       - band 2: 236 triangles.
+[21:42:08.544484][info]       - band 3: 850 triangles.
+[21:42:09.038161][info]   - Texture file: 2
+[21:42:09.038161][info]       - band 1: 9 triangles.
+[21:42:09.047141][info]       - band 2: 334 triangles.
+[21:42:09.315772][info]       - band 3: 580 triangles.
+[21:42:09.720540][info] - camera 1120240882 (49/97) with contributions to 2 texture files:
+[21:42:15.929759][info]   - Texture file: 1
+[21:42:15.929759][info]       - band 1: 58 triangles.
+[21:42:15.989870][info]       - band 2: 60 triangles.
+[21:42:16.064495][info]       - band 3: 72 triangles.
+[21:42:16.103968][info]   - Texture file: 2
+[21:42:16.103968][info]       - band 1: 41 triangles.
+[21:42:16.134510][info]       - band 2: 49 triangles.
+[21:42:16.199787][info]       - band 3: 53 triangles.
+[21:42:16.307469][info] - camera 1130460636 (50/97) with contributions to 2 texture files:
+[21:42:22.560999][info]   - Texture file: 1
+[21:42:22.560999][info]       - band 1: 51 triangles.
+[21:42:22.614403][info]       - band 2: 920 triangles.
+[21:42:23.394061][info]       - band 3: 2127 triangles.
+[21:42:24.614958][info]   - Texture file: 2
+[21:42:24.614958][info]       - band 1: 36 triangles.
+[21:42:24.665951][info]       - band 2: 343 triangles.
+[21:42:24.913831][info]       - band 3: 956 triangles.
+[21:42:25.654680][info] - camera 1171244209 (51/97) with contributions to 2 texture files:
+[21:42:31.907170][info]   - Texture file: 1
+[21:42:31.908151][info]       - band 1: 142 triangles.
+[21:42:32.029687][info]       - band 2: 1650 triangles.
+[21:42:32.884544][info]       - band 3: 1242 triangles.
+[21:42:33.557746][info]   - Texture file: 2
+[21:42:33.557746][info]       - band 1: 95 triangles.
+[21:42:33.657443][info]       - band 2: 609 triangles.
+[21:42:33.965625][info]       - band 3: 764 triangles.
+[21:42:34.465449][info] - camera 1180957681 (52/97) with contributions to 2 texture files:
+[21:42:40.179795][info]   - Texture file: 1
+[21:42:40.179795][info]       - band 1: 40 triangles.
+[21:42:40.279575][info]       - band 2: 370 triangles.
+[21:42:40.568069][info]       - band 3: 1618 triangles.
+[21:42:41.394453][info]   - Texture file: 2
+[21:42:41.394453][info]       - band 1: 61 triangles.
+[21:42:41.438178][info]       - band 2: 287 triangles.
+[21:42:41.625324][info]       - band 3: 1035 triangles.
+[21:42:42.264618][info] - camera 1201597190 (53/97) with contributions to 2 texture files:
+[21:42:48.305016][info]   - Texture file: 1
+[21:42:48.305016][info]       - band 1: 134 triangles.
+[21:42:48.388263][info]       - band 2: 1544 triangles.
+[21:42:49.315096][info]       - band 3: 1174 triangles.
+[21:42:49.903537][info]   - Texture file: 2
+[21:42:49.904534][info]       - band 1: 43 triangles.
+[21:42:49.963363][info]       - band 2: 209 triangles.
+[21:42:50.081049][info]       - band 3: 628 triangles.
+[21:42:50.566749][info] - camera 1210186263 (54/97) with contributions to 2 texture files:
+[21:42:56.374353][info]   - Texture file: 1
+[21:42:56.374353][info]       - band 1: 242 triangles.
+[21:42:56.514736][info]       - band 2: 1432 triangles.
+[21:42:57.624998][info]       - band 3: 1567 triangles.
+[21:42:58.414770][info]   - Texture file: 2
+[21:42:58.414770][info]       - band 1: 221 triangles.
+[21:42:58.546422][info]       - band 2: 823 triangles.
+[21:42:59.055086][info]       - band 3: 1414 triangles.
+[21:42:59.885850][info] - camera 1231361455 (55/97) with contributions to 2 texture files:
+[21:43:05.602766][info]   - Texture file: 1
+[21:43:05.602766][info]       - band 1: 103 triangles.
+[21:43:05.646644][info]       - band 2: 480 triangles.
+[21:43:05.933938][info]       - band 3: 1750 triangles.
+[21:43:06.896792][info]   - Texture file: 2
+[21:43:06.896792][info]       - band 1: 34 triangles.
+[21:43:06.918730][info]       - band 2: 316 triangles.
+[21:43:07.073164][info]       - band 3: 906 triangles.
+[21:43:07.652096][info] - camera 1235085684 (56/97) with contributions to 2 texture files:
+[21:43:13.789617][info]   - Texture file: 1
+[21:43:13.789617][info]       - band 1: 311 triangles.
+[21:43:13.963645][info]       - band 2: 1251 triangles.
+[21:43:14.581144][info]       - band 3: 1767 triangles.
+[21:43:15.477996][info]   - Texture file: 2
+[21:43:15.477996][info]       - band 1: 89 triangles.
+[21:43:15.540705][info]       - band 2: 789 triangles.
+[21:43:16.051356][info]       - band 3: 1465 triangles.
+[21:43:16.873940][info] - camera 1262501626 (57/97) with contributions to 2 texture files:
+[21:43:22.819898][info]   - Texture file: 1
+[21:43:22.819898][info]       - band 1: 24 triangles.
+[21:43:22.846159][info]       - band 2: 409 triangles.
+[21:43:23.194273][info]       - band 3: 2145 triangles.
+[21:43:24.223907][info]   - Texture file: 2
+[21:43:24.223907][info]       - band 1: 73 triangles.
+[21:43:24.369947][info]       - band 2: 315 triangles.
+[21:43:24.683058][info]       - band 3: 745 triangles.
+[21:43:25.190657][info] - camera 1281714430 (58/97) with contributions to 2 texture files:
+[21:43:31.249448][info]   - Texture file: 1
+[21:43:31.249448][info]       - band 1: 71 triangles.
+[21:43:31.295060][info]       - band 2: 742 triangles.
+[21:43:31.869924][info]       - band 3: 1269 triangles.
+[21:43:32.415303][info]   - Texture file: 2
+[21:43:32.418841][info]       - band 1: 153 triangles.
+[21:43:32.519143][info]       - band 2: 560 triangles.
+[21:43:33.026916][info]       - band 3: 707 triangles.
+[21:43:33.524507][info] - camera 1316029216 (59/97) with contributions to 2 texture files:
+[21:43:39.577375][info]   - Texture file: 1
+[21:43:39.577375][info]       - band 1: 11 triangles.
+[21:43:39.583827][info]       - band 2: 689 triangles.
+[21:43:40.124634][info]       - band 3: 1509 triangles.
+[21:43:40.910095][info]   - Texture file: 2
+[21:43:40.910095][info]       - band 1: 18 triangles.
+[21:43:40.941624][info]       - band 2: 207 triangles.
+[21:43:41.057787][info]       - band 3: 789 triangles.
+[21:43:41.484330][info] - camera 1320218811 (60/97) with contributions to 2 texture files:
+[21:43:47.293537][info]   - Texture file: 1
+[21:43:47.293537][info]       - band 1: 17 triangles.
+[21:43:47.345352][info]       - band 2: 202 triangles.
+[21:43:47.484561][info]       - band 3: 760 triangles.
+[21:43:48.028549][info]   - Texture file: 2
+[21:43:48.028977][info]       - band 1: 36 triangles.
+[21:43:48.107449][info]       - band 2: 55 triangles.
+[21:43:48.166404][info]       - band 3: 329 triangles.
+[21:43:48.475363][info] - camera 1351501098 (61/97) with contributions to 2 texture files:
+[21:43:54.349842][info]   - Texture file: 1
+[21:43:54.349842][info]       - band 1: 113 triangles.
+[21:43:54.464369][info]       - band 2: 857 triangles.
+[21:43:54.882996][info]       - band 3: 1145 triangles.
+[21:43:55.365048][info]   - Texture file: 2
+[21:43:55.365048][info]       - band 1: 100 triangles.
+[21:43:55.463957][info]       - band 2: 434 triangles.
+[21:43:55.800373][info]       - band 3: 991 triangles.
+[21:43:56.376954][info] - camera 1416596008 (62/97) with contributions to 2 texture files:
+[21:44:02.494637][info]   - Texture file: 1
+[21:44:02.494637][info]       - band 1: 22 triangles.
+[21:44:02.529581][info]       - band 2: 661 triangles.
+[21:44:02.951565][info]       - band 3: 1664 triangles.
+[21:44:03.867725][info]   - Texture file: 2
+[21:44:03.867725][info]       - band 1: 16 triangles.
+[21:44:03.884673][info]       - band 2: 517 triangles.
+[21:44:04.190439][info]       - band 3: 1155 triangles.
+[21:44:04.873092][info] - camera 1421270260 (63/97) unused.
+[21:44:04.873092][info] - camera 1430131547 (64/97) with contributions to 2 texture files:
+[21:44:11.129413][info]   - Texture file: 1
+[21:44:11.135911][info]       - band 1: 295 triangles.
+[21:44:11.306546][info]       - band 2: 1141 triangles.
+[21:44:11.854510][info]       - band 3: 1555 triangles.
+[21:44:12.605247][info]   - Texture file: 2
+[21:44:12.605247][info]       - band 1: 160 triangles.
+[21:44:12.765818][info]       - band 2: 773 triangles.
+[21:44:13.249523][info]       - band 3: 1073 triangles.
+[21:44:13.783271][info] - camera 1434965786 (65/97) with contributions to 2 texture files:
+[21:44:20.759412][info]   - Texture file: 1
+[21:44:20.759412][info]       - band 1: 5 triangles.
+[21:44:20.764423][info]       - band 2: 11 triangles.
+[21:44:20.768128][info]       - band 3: 25 triangles.
+[21:44:20.784809][info]   - Texture file: 2
+[21:44:20.785823][info]       - band 1: 12 triangles.
+[21:44:20.794716][info]       - band 2: 8 triangles.
+[21:44:20.799278][info]       - band 3: 8 triangles.
+[21:44:20.879664][info] - camera 1483263478 (66/97) with contributions to 2 texture files:
+[21:44:26.979669][info]   - Texture file: 1
+[21:44:26.979669][info]       - band 1: 53 triangles.
+[21:44:27.004723][info]       - band 2: 1074 triangles.
+[21:44:27.644790][info]       - band 3: 2325 triangles.
+[21:44:28.765890][info]   - Texture file: 2
+[21:44:28.765890][info]       - band 1: 76 triangles.
+[21:44:28.883090][info]       - band 2: 1281 triangles.
+[21:44:29.649081][info]       - band 3: 1691 triangles.
+[21:44:30.630429][info] - camera 1491884825 (67/97) with contributions to 2 texture files:
+[21:44:36.974643][info]   - Texture file: 1
+[21:44:36.974643][info]       - band 1: 315 triangles.
+[21:44:37.215372][info]       - band 2: 1932 triangles.
+[21:44:38.307028][info]       - band 3: 2014 triangles.
+[21:44:39.217845][info]   - Texture file: 2
+[21:44:39.217845][info]       - band 1: 161 triangles.
+[21:44:39.335592][info]       - band 2: 526 triangles.
+[21:44:39.634143][info]       - band 3: 993 triangles.
+[21:44:40.190346][info] - camera 1556044684 (68/97) with contributions to 2 texture files:
+[21:44:46.169518][info]   - Texture file: 1
+[21:44:46.169518][info]       - band 1: 19 triangles.
+[21:44:46.204613][info]       - band 2: 236 triangles.
+[21:44:46.339460][info]       - band 3: 1121 triangles.
+[21:44:46.960389][info]   - Texture file: 2
+[21:44:46.960389][info]       - band 1: 22 triangles.
+[21:44:46.994821][info]       - band 2: 177 triangles.
+[21:44:47.129461][info]       - band 3: 925 triangles.
+[21:44:47.666542][info] - camera 1563237414 (69/97) unused.
+[21:44:47.666542][info] - camera 1563623686 (70/97) with contributions to 2 texture files:
+[21:44:53.561661][info]   - Texture file: 1
+[21:44:53.561661][info]       - band 1: 14 triangles.
+[21:44:53.584575][info]       - band 2: 165 triangles.
+[21:44:53.902936][info]       - band 3: 1522 triangles.
+[21:44:54.818044][info]   - Texture file: 2
+[21:44:54.818044][info]       - band 1: 18 triangles.
+[21:44:54.854862][info]       - band 2: 189 triangles.
+[21:44:55.150181][info]       - band 3: 800 triangles.
+[21:44:55.723661][info] - camera 1601673267 (71/97) unused.
+[21:44:55.723661][info] - camera 1603570025 (72/97) with contributions to 2 texture files:
+[21:45:01.369800][info]   - Texture file: 1
+[21:45:01.369800][info]       - band 1: 64 triangles.
+[21:45:01.489521][info]       - band 2: 1029 triangles.
+[21:45:02.079473][info]       - band 3: 1966 triangles.
+[21:45:02.955146][info]   - Texture file: 2
+[21:45:02.955146][info]       - band 1: 27 triangles.
+[21:45:03.048253][info]       - band 2: 461 triangles.
+[21:45:03.405362][info]       - band 3: 1278 triangles.
+[21:45:04.121010][info] - camera 1674252532 (73/97) with contributions to 2 texture files:
+[21:45:09.704723][info]   - Texture file: 1
+[21:45:09.708237][info]       - band 1: 41 triangles.
+[21:45:09.746028][info]       - band 2: 331 triangles.
+[21:45:09.964408][info]       - band 3: 690 triangles.
+[21:45:10.293825][info]   - Texture file: 2
+[21:45:10.293825][info]       - band 1: 11 triangles.
+[21:45:10.309802][info]       - band 2: 200 triangles.
+[21:45:10.421718][info]       - band 3: 525 triangles.
+[21:45:10.746060][info] - camera 1744589438 (74/97) with contributions to 2 texture files:
+[21:45:16.449766][info]   - Texture file: 1
+[21:45:16.449766][info]       - band 1: 21 triangles.
+[21:45:16.519507][info]       - band 2: 161 triangles.
+[21:45:16.660265][info]       - band 3: 695 triangles.
+[21:45:17.016271][info]   - Texture file: 2
+[21:45:17.016271][info]       - band 1: 27 triangles.
+[21:45:17.040207][info]       - band 2: 289 triangles.
+[21:45:17.214040][info]       - band 3: 521 triangles.
+[21:45:17.607003][info] - camera 1788701816 (75/97) with contributions to 2 texture files:
+[21:45:23.449620][info]   - Texture file: 1
+[21:45:23.449620][info]       - band 1: 39 triangles.
+[21:45:23.499619][info]       - band 2: 121 triangles.
+[21:45:23.607587][info]       - band 3: 445 triangles.
+[21:45:23.838076][info]   - Texture file: 2
+[21:45:23.838076][info]       - band 1: 118 triangles.
+[21:45:23.963661][info]       - band 2: 173 triangles.
+[21:45:24.074173][info]       - band 3: 384 triangles.
+[21:45:24.361422][info] - camera 1815948714 (76/97) unused.
+[21:45:24.361422][info] - camera 1824079430 (77/97) with contributions to 2 texture files:
+[21:45:30.799326][info]   - Texture file: 1
+[21:45:30.799326][info]       - band 1: 50 triangles.
+[21:45:30.864491][info]       - band 2: 439 triangles.
+[21:45:31.197136][info]       - band 3: 725 triangles.
+[21:45:31.584589][info]   - Texture file: 2
+[21:45:31.584589][info]       - band 1: 106 triangles.
+[21:45:31.678244][info]       - band 2: 366 triangles.
+[21:45:32.000200][info]       - band 3: 320 triangles.
+[21:45:32.214063][info] - camera 1828300933 (78/97) with contributions to 2 texture files:
+[21:45:37.594254][info]   - Texture file: 1
+[21:45:37.594254][info]       - band 1: 64 triangles.
+[21:45:37.679411][info]       - band 2: 689 triangles.
+[21:45:38.093060][info]       - band 3: 1846 triangles.
+[21:45:39.182004][info]   - Texture file: 2
+[21:45:39.182004][info]       - band 1: 109 triangles.
+[21:45:39.298694][info]       - band 2: 570 triangles.
+[21:45:39.684661][info]       - band 3: 913 triangles.
+[21:45:40.164379][info] - camera 1829946004 (79/97) with contributions to 2 texture files:
+[21:45:45.839733][info]   - Texture file: 1
+[21:45:45.839733][info]       - band 1: 234 triangles.
+[21:45:45.955504][info]       - band 2: 1665 triangles.
+[21:45:46.822724][info]       - band 3: 1040 triangles.
+[21:45:47.285281][info]   - Texture file: 2
+[21:45:47.285852][info]       - band 1: 87 triangles.
+[21:45:47.380124][info]       - band 2: 175 triangles.
+[21:45:47.509813][info]       - band 3: 422 triangles.
+[21:45:47.805380][info] - camera 1830707041 (80/97) with contributions to 2 texture files:
+[21:45:53.324412][info]   - Texture file: 1
+[21:45:53.324412][info]       - band 1: 1200 triangles.
+[21:45:53.914661][info]       - band 2: 484 triangles.
+[21:45:54.142533][info]       - band 3: 808 triangles.
+[21:45:54.533892][info]   - Texture file: 2
+[21:45:54.533892][info]       - band 1: 178 triangles.
+[21:45:54.635962][info]       - band 2: 367 triangles.
+[21:45:54.892365][info]       - band 3: 594 triangles.
+[21:45:55.358371][info] - camera 1837852710 (81/97) unused.
+[21:45:55.358371][info] - camera 1874686603 (82/97) with contributions to 2 texture files:
+[21:46:01.519743][info]   - Texture file: 1
+[21:46:01.519743][info]       - band 1: 2 triangles.
+[21:46:01.519743][info]       - band 2: 1 triangles.
+[21:46:01.524777][info]       - band 3: 10 triangles.
+[21:46:01.532724][info]   - Texture file: 2
+[21:46:01.532724][info]       - band 1: 0 triangles.
+[21:46:01.533711][info]       - band 2: 3 triangles.
+[21:46:01.534688][info]       - band 3: 2 triangles.
+[21:46:01.609994][info] - camera 1911649275 (83/97) with contributions to 2 texture files:
+[21:46:08.373622][info]   - Texture file: 1
+[21:46:08.373622][info]       - band 1: 126 triangles.
+[21:46:08.440367][info]       - band 2: 811 triangles.
+[21:46:08.865612][info]       - band 3: 1983 triangles.
+[21:46:09.683003][info]   - Texture file: 2
+[21:46:09.683003][info]       - band 1: 107 triangles.
+[21:46:09.763770][info]       - band 2: 653 triangles.
+[21:46:10.105610][info]       - band 3: 1355 triangles.
+[21:46:10.859690][info] - camera 1912778621 (84/97) with contributions to 2 texture files:
+[21:46:17.078804][info]   - Texture file: 1
+[21:46:17.079874][info]       - band 1: 336 triangles.
+[21:46:17.330487][info]       - band 2: 1424 triangles.
+[21:46:18.125852][info]       - band 3: 1194 triangles.
+[21:46:18.697595][info]   - Texture file: 2
+[21:46:18.697595][info]       - band 1: 244 triangles.
+[21:46:18.865578][info]       - band 2: 754 triangles.
+[21:46:19.416666][info]       - band 3: 1024 triangles.
+[21:46:20.064425][info] - camera 1921277878 (85/97) unused.
+[21:46:20.064425][info] - camera 1926350533 (86/97) with contributions to 2 texture files:
+[21:46:25.939462][info]   - Texture file: 1
+[21:46:25.939462][info]       - band 1: 561 triangles.
+[21:46:26.284181][info]       - band 2: 529 triangles.
+[21:46:26.646251][info]       - band 3: 912 triangles.
+[21:46:27.255617][info]   - Texture file: 2
+[21:46:27.255617][info]       - band 1: 197 triangles.
+[21:46:27.388264][info]       - band 2: 406 triangles.
+[21:46:27.705414][info]       - band 3: 761 triangles.
+[21:46:28.329747][info] - camera 1930351477 (87/97) with contributions to 2 texture files:
+[21:46:34.039884][info]   - Texture file: 1
+[21:46:34.039884][info]       - band 1: 124 triangles.
+[21:46:34.131273][info]       - band 2: 1811 triangles.
+[21:46:35.003980][info]       - band 3: 1609 triangles.
+[21:46:35.737837][info]   - Texture file: 2
+[21:46:35.737837][info]       - band 1: 75 triangles.
+[21:46:35.798862][info]       - band 2: 1100 triangles.
+[21:46:36.587495][info]       - band 3: 1249 triangles.
+[21:46:37.310592][info] - camera 1980422528 (88/97) with contributions to 2 texture files:
+[21:46:43.009132][info]   - Texture file: 1
+[21:46:43.014657][info]       - band 1: 0 triangles.
+[21:46:43.014657][info]       - band 2: 0 triangles.
+[21:46:43.014657][info]       - band 3: 2 triangles.
+[21:46:43.014657][info]   - Texture file: 2
+[21:46:43.014657][info]       - band 1: 0 triangles.
+[21:46:43.014657][info]       - band 2: 0 triangles.
+[21:46:43.014657][info]       - band 3: 1 triangles.
+[21:46:43.119534][info] - camera 1984705402 (89/97) with contributions to 2 texture files:
+[21:46:48.848602][info]   - Texture file: 1
+[21:46:48.848602][info]       - band 1: 17 triangles.
+[21:46:48.884768][info]       - band 2: 112 triangles.
+[21:46:48.963319][info]       - band 3: 493 triangles.
+[21:46:49.147258][info]   - Texture file: 2
+[21:46:49.147258][info]       - band 1: 12 triangles.
+[21:46:49.149783][info]       - band 2: 130 triangles.
+[21:46:49.246122][info]       - band 3: 392 triangles.
+[21:46:49.474692][info] - camera 1992853944 (90/97) with contributions to 2 texture files:
+[21:46:55.329477][info]   - Texture file: 1
+[21:46:55.329477][info]       - band 1: 38 triangles.
+[21:46:55.444776][info]       - band 2: 569 triangles.
+[21:46:55.894662][info]       - band 3: 2080 triangles.
+[21:46:56.950426][info]   - Texture file: 2
+[21:46:56.950426][info]       - band 1: 35 triangles.
+[21:46:56.975365][info]       - band 2: 371 triangles.
+[21:46:57.231674][info]       - band 3: 1079 triangles.
+[21:46:57.884504][info] - camera 1997396034 (91/97) unused.
+[21:46:57.884504][info] - camera 2011264856 (92/97) with contributions to 2 texture files:
+[21:47:03.665709][info]   - Texture file: 1
+[21:47:03.665709][info]       - band 1: 196 triangles.
+[21:47:03.914419][info]       - band 2: 1163 triangles.
+[21:47:04.614603][info]       - band 3: 1618 triangles.
+[21:47:05.452526][info]   - Texture file: 2
+[21:47:05.453537][info]       - band 1: 305 triangles.
+[21:47:05.704631][info]       - band 2: 1263 triangles.
+[21:47:06.449618][info]       - band 3: 1038 triangles.
+[21:47:07.056482][info] - camera 2016018026 (93/97) with contributions to 2 texture files:
+[21:47:12.729677][info]   - Texture file: 1
+[21:47:12.729677][info]       - band 1: 106 triangles.
+[21:47:12.809688][info]       - band 2: 1424 triangles.
+[21:47:13.740210][info]       - band 3: 2300 triangles.
+[21:47:14.795536][info]   - Texture file: 2
+[21:47:14.795536][info]       - band 1: 130 triangles.
+[21:47:14.928443][info]       - band 2: 743 triangles.
+[21:47:15.343099][info]       - band 3: 904 triangles.
+[21:47:15.820031][info] - camera 2086719211 (94/97) with contributions to 2 texture files:
+[21:47:21.389443][info]   - Texture file: 1
+[21:47:21.389443][info]       - band 1: 148 triangles.
+[21:47:21.482675][info]       - band 2: 772 triangles.
+[21:47:21.894579][info]       - band 3: 1000 triangles.
+[21:47:22.400269][info]   - Texture file: 2
+[21:47:22.400269][info]       - band 1: 143 triangles.
+[21:47:22.509653][info]       - band 2: 440 triangles.
+[21:47:22.750137][info]       - band 3: 1151 triangles.
+[21:47:23.525527][info] - camera 2088308637 (95/97) with contributions to 2 texture files:
+[21:47:29.589577][info]   - Texture file: 1
+[21:47:29.589577][info]       - band 1: 45 triangles.
+[21:47:29.615968][info]       - band 2: 923 triangles.
+[21:47:30.240114][info]       - band 3: 2444 triangles.
+[21:47:31.282062][info]   - Texture file: 2
+[21:47:31.283065][info]       - band 1: 11 triangles.
+[21:47:31.293028][info]       - band 2: 428 triangles.
+[21:47:31.558318][info]       - band 3: 1042 triangles.
+[21:47:32.074453][info] - camera 2097017371 (96/97) with contributions to 2 texture files:
+[21:47:37.554574][info]   - Texture file: 1
+[21:47:37.554574][info]       - band 1: 18 triangles.
+[21:47:37.569628][info]       - band 2: 912 triangles.
+[21:47:38.291319][info]       - band 3: 1980 triangles.
+[21:47:39.274781][info]   - Texture file: 2
+[21:47:39.274781][info]       - band 1: 24 triangles.
+[21:47:39.299790][info]       - band 2: 774 triangles.
+[21:47:39.938054][info]       - band 3: 1149 triangles.
+[21:47:40.620262][info] - camera 2139321798 (97/97) with contributions to 2 texture files:
+[21:47:46.149312][info]   - Texture file: 1
+[21:47:46.149312][info]       - band 1: 34 triangles.
+[21:47:46.174056][info]       - band 2: 866 triangles.
+[21:47:46.658056][info]       - band 3: 2283 triangles.
+[21:47:47.616206][info]   - Texture file: 2
+[21:47:47.616206][info]       - band 1: 59 triangles.
+[21:47:47.673056][info]       - band 2: 974 triangles.
+[21:47:48.406093][info]       - band 3: 1548 triangles.
+[21:47:49.421620][info] Create texture 1
+[21:47:49.421620][info]   - Computing final (average) color.
+[21:47:53.749881][info]   - Edge padding (15 pixels).
+[21:47:55.049735][info]   - Downscaling texture (2x).
+[21:48:23.264594][info]   - Writing texture file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Texturing/9691fe3e39f8eaba4d33cbcf8eda7e7b61390b27\texture_1001.png
+[21:48:37.589531][info] Create texture 2
+[21:48:37.589531][info]   - Computing final (average) color.
+[21:48:42.109714][info]   - Edge padding (15 pixels).
+[21:48:43.589788][info]   - Downscaling texture (2x).
+[21:49:10.839437][info]   - Writing texture file: D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/MeshroomCache/Texturing/9691fe3e39f8eaba4d33cbcf8eda7e7b61390b27\texture_1002.png
+[21:49:23.790022][info] Task done in (s): 798.521000

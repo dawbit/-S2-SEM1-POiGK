@@ -1,0 +1,17 @@
+{
+    "status": "STOPPED",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --input \"D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Meshing/37146d7ade138bf3cfcf6ac9f9a21ef0fa1cdd09/densePointCloud.abc\" --imagesFolder \"D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/PrepareDenseScene/d99c988ac68343b5024558251ce738aea7e5738e\" --inputMesh \"D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/MeshFiltering/2d95e1caa13e0369ac475b7fede34906ff9c8bfd/mesh.obj\" --textureSide 16384 --downscale 1 --outputTextureFileType png --unwrapMethod Basic --useUDIM True --fillHoles False --padding 5 --multiBandDownscale 4 --multiBandNbContrib 1 5 10 0 --useScore True --bestScoreThreshold 0.1 --angleHardThreshold 90.0 --processColorspace sRGB --correctEV False --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --subdivisionTargetRatio 0.8 --verboseLevel info --output \"D:/STUDIA/REPOZYTORIA/-S2-SEM1-POiGK/project_2_meshroom/meshroom_models/bull_2/MeshroomCache/Texturing/157d3177467f77fb63b62489139ccaa443fdcfd1\"",
+    "env": null,
+    "startDateTime": "2021-05-09 11:27:53.582041",
+    "endDateTime": "",
+    "elapsedTime": 0,
+    "hostname": "DESKTOP-TR05A46",
+    "sessionUid": "ba799af6-b0a7-11eb-b896-3c9509240575",
+    "elapsedTimeStr": "0:00:00"
+}
